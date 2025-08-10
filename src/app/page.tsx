@@ -1,102 +1,365 @@
-import Image from "next/image";
+'use client';
+
+import { motion } from 'framer-motion';
+import { Github, Linkedin, Mail, Download } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <a href="#home" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
+              <Image 
+                src="/figs/head_logo.png" 
+                alt="Tian Zhang" 
+                width={32} 
+                height={32}
+                className="rounded-full"
+              />
+              <span className="text-xl font-bold text-gray-900">Tian Zhang</span>
+            </a>
+            <div className="flex items-center space-x-8">
+              <div className="hidden md:flex space-x-8">
+                <a href="/" className="text-blue-600 font-medium">Home</a>
+                <a href="/about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
+                <a href="/portfolio" className="text-gray-700 hover:text-blue-600 transition-colors">Portfolio</a>
+                <a href="/projects" className="text-gray-700 hover:text-blue-600 transition-colors">Projects</a>
+                <a href="/contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
+              </div>
+              <a 
+                href="/contact"
+                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium mr-12"
+              >
+                Get in Touch
+              </a>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      </nav>
+
+      {/* Hero Section */}
+      <section id="home" className="pt-20 pb-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="space-y-6"
+            >
+              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900">
+                On the Way to
+                <span className="block text-blue-600">A Pro Data Scientist</span>
+              </h1>
+              <p className="text-xl text-gray-600 leading-relaxed">
+                Data Scientist at JM Eagle, USC graduate specializing in machine learning, 
+                cloud deployment, and building intelligent pricing platforms.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <a 
+                  href="/files/Resume_Tian_Zhang.pdf"
+                  className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  Download Resume
+                </a>
+                <a 
+                  href="/about"
+                  className="inline-flex items-center px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition-colors"
+                >
+                  Learn More About Me
+                </a>
+                <a 
+                  href="/contact"
+                  className="inline-flex items-center px-6 py-3 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors"
+                >
+                  Get in Touch
+                </a>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              className="relative"
+            >
+              <Image
+                src="/figs/dog_way_to_ds.jpg"
+                alt="Data Science Journey"
+                width={600}
+                height={400}
+                className="rounded-lg shadow-2xl"
+              />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">About Me</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              I am a Data Scientist passionate about building intelligent solutions and deploying 
+              machine learning models in production environments.
+            </p>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-blue-600">🎓</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Education</h3>
+              <p className="text-gray-600">M.S. from University of Southern California (USC)</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <div className="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-green-600">💼</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Current Role</h3>
+              <p className="text-gray-600">Data Scientist at JM Eagle</p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-2xl font-bold text-purple-600">🚀</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Expertise</h3>
+              <p className="text-gray-600">ML, Cloud Deployment, Python, SQL</p>
+            </motion.div>
+          </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+            className="mt-12 grid lg:grid-cols-2 gap-8 items-center"
+          >
+            <div>
+              <Image
+                src="/figs/Tian_Zhang.jpg"
+                alt="Tian Zhang"
+                width={400}
+                height={400}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-gray-900">My Journey</h3>
+              <p className="text-gray-600 leading-relaxed">
+                I am a new grad with <strong>master</strong> degree from <strong>University of Southern California (USC)</strong> 
+                at 2019. Currently I work as a <strong>Data Scientist</strong> at JM Eagle Manufacturing, 
+                in charge of Pricing Quotation Platform.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                My current work is about quotation, aiming to give perfect price recommendation for different quote requests. 
+                Our quotation platform is daily trained and keeps updated with the newest price trends.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                I'm fluent with Python and SQL, and have experience building machine learning models and deploying 
+                them into real use based on Cloud Services like AWS SageMaker, Lambda, ECR and S3.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section id="portfolio" className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Portfolio</h2>
+            <p className="text-xl text-gray-600">Explore my work in machine learning, engineering, and web development</p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer"
+            >
+              <a href="/portfolio" className="block p-6">
+                <Image
+                  src="/figs/Machine Learning.png"
+                  alt="Machine Learning"
+                  width={64}
+                  height={64}
+                  className="mb-4"
+                />
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">Machine Learning</h3>
+                <ul className="text-gray-600 space-y-1 text-sm mb-4">
+                  <li>• Supervised Learning</li>
+                  <li>• Image Processing</li>
+                  <li>• Deploy ML Model on Cloud</li>
+                  <li>• Natural Language Processing</li>
+                </ul>
+                <div className="text-blue-600 text-sm font-medium group-hover:text-blue-800 transition-colors">
+                  View Portfolio →
+                </div>
+              </a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer"
+            >
+              <a href="/projects" className="block p-6">
+                <Image
+                  src="/figs/Robotics.png"
+                  alt="Electrical Engineering"
+                  width={64}
+                  height={64}
+                  className="mb-4"
+                />
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">Electrical Engineering</h3>
+                <ul className="text-gray-600 space-y-1 text-sm mb-4">
+                  <li>• Robotic Design</li>
+                  <li>• Sensor Networks</li>
+                  <li>• Control System</li>
+                  <li>• Circuit Design</li>
+                </ul>
+                <div className="text-blue-600 text-sm font-medium group-hover:text-blue-800 transition-colors">
+                  View Projects →
+                </div>
+              </a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group cursor-pointer"
+            >
+              <a href="/about" className="block p-6">
+                <Image
+                  src="/figs/Web_Develop.png"
+                  alt="Web & App Design"
+                  width={64}
+                  height={64}
+                  className="mb-4"
+                />
+                <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors">Web & App Design</h3>
+                <ul className="text-gray-600 space-y-1 text-sm mb-4">
+                  <li>• Web Scraping</li>
+                  <li>• Web Development</li>
+                  <li>• Android Development</li>
+                  <li>• Modern UI/UX</li>
+                </ul>
+                <div className="text-blue-600 text-sm font-medium group-hover:text-blue-800 transition-colors">
+                  Learn About Me →
+                </div>
+              </a>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+            <p className="text-xl text-gray-600">Let's connect and discuss opportunities</p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="flex flex-wrap justify-center gap-4"
+          >
+            <a
+              href="mailto:0tianzhang0@gmail.com"
+              className="flex items-center space-x-2 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              <Mail className="w-5 h-5" />
+              <span>Email</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/tian-zhang-87b4a0165/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 px-6 py-3 bg-blue-700 text-white rounded-lg hover:bg-blue-800 transition-colors"
+            >
+              <Linkedin className="w-5 h-5" />
+              <span>LinkedIn</span>
+            </a>
+            <a
+              href="https://github.com/dukesky"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center space-x-2 px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors"
+            >
+              <Github className="w-5 h-5" />
+              <span>GitHub</span>
+            </a>
+            <a
+              href="/contact"
+              className="flex items-center space-x-2 px-6 py-3 border border-white text-white rounded-lg hover:bg-white hover:text-gray-900 transition-colors"
+            >
+              <span>Contact Form →</span>
+            </a>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-gray-900 text-white py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gray-400">
+            Designed by <strong>Tian Zhang</strong> • Modern Personal Website v3.0 • 2024
+          </p>
+        </div>
       </footer>
     </div>
   );
