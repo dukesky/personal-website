@@ -1,8 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, ExternalLink, Calendar, Users, Star, GitBranch } from 'lucide-react';
+import { Github, ExternalLink, Star, GitBranch } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Projects() {
   const projects = [
@@ -109,39 +110,6 @@ export default function Projects() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-              <Image 
-                src="/figs/head_logo.png" 
-                alt="Tian Zhang" 
-                width={32} 
-                height={32}
-                className="rounded-full"
-              />
-              <span className="text-xl font-bold text-gray-900">Tian Zhang</span>
-            </a>
-            <div className="flex items-center space-x-8">
-              <div className="hidden md:flex space-x-8">
-                <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
-                <a href="/about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
-                <a href="/portfolio" className="text-gray-700 hover:text-blue-600 transition-colors">Portfolio</a>
-                <a href="/projects" className="text-blue-600 font-medium">Projects</a>
-                <a href="/contact" className="text-gray-700 hover:text-blue-600 transition-colors">Contact</a>
-              </div>
-              <a 
-                href="/contact"
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium mr-8"
-              >
-                Get in Touch
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <section className="pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

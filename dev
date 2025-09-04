@@ -1,0 +1,4 @@
+#!/bin/bash
+# Simple alias for server-manager.sh
+cd "$(dirname "$0")"
+./server-manager.sh "$@"

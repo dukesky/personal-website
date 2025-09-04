@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Download, MessageCircle } from 'lucide-react';
+import { Mail, MapPin, Send, Github, Linkedin, Download, MessageCircle } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -74,39 +75,6 @@ export default function Contact() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <a href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-              <Image 
-                src="/figs/head_logo.png" 
-                alt="Tian Zhang" 
-                width={32} 
-                height={32}
-                className="rounded-full"
-              />
-              <span className="text-xl font-bold text-gray-900">Tian Zhang</span>
-            </a>
-            <div className="flex items-center space-x-8">
-              <div className="hidden md:flex space-x-8">
-                <a href="/" className="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
-                <a href="/about" className="text-gray-700 hover:text-blue-600 transition-colors">About</a>
-                <a href="/portfolio" className="text-gray-700 hover:text-blue-600 transition-colors">Portfolio</a>
-                <a href="/projects" className="text-gray-700 hover:text-blue-600 transition-colors">Projects</a>
-                <a href="/contact" className="text-blue-600 font-medium">Contact</a>
-              </div>
-              <a 
-                href="/contact"
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-sm font-medium mr-8"
-              >
-                Get in Touch
-              </a>
-            </div>
-          </div>
-        </div>
-      </nav>
-
       {/* Hero Section */}
       <section className="pt-20 pb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -120,8 +88,8 @@ export default function Contact() {
               Get In <span className="text-blue-600">Touch</span>
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              I'm always interested in new opportunities, collaborations, and interesting projects. 
-              Let's connect and discuss how we can work together.
+              I&apos;m always interested in new opportunities, collaborations, and interesting projects. 
+              Let&apos;s connect and discuss how we can work together.
             </p>
           </motion.div>
         </div>
@@ -141,7 +109,7 @@ export default function Contact() {
               <div className="mb-8">
                 <h2 className="text-2xl font-bold text-gray-900 mb-2">Send a Message</h2>
                 <p className="text-gray-600">
-                  Fill out the form below and I'll get back to you as soon as possible.
+                  Fill out the form below and I&apos;ll get back to you as soon as possible.
                 </p>
               </div>
 
@@ -155,7 +123,7 @@ export default function Contact() {
                     <MessageCircle className="w-8 h-8 text-green-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-2">Message Sent!</h3>
-                  <p className="text-gray-600">Thank you for reaching out. I'll get back to you soon.</p>
+                  <p className="text-gray-600">Thank you for reaching out. I&apos;ll get back to you soon.</p>
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -204,7 +172,7 @@ export default function Contact() {
                       value={formData.subject}
                       onChange={handleInputChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors"
-                      placeholder="What's this about?"
+                      placeholder="What&apos;s this about?"
                     />
                   </div>
                   
@@ -256,7 +224,7 @@ export default function Contact() {
                 <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
                 <p className="text-gray-600 mb-8">
                   Prefer a more direct approach? You can reach me through any of these channels. 
-                  I'm always happy to discuss new opportunities and interesting projects.
+                  I&apos;m always happy to discuss new opportunities and interesting projects.
                 </p>
               </div>
 

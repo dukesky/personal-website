@@ -1,0 +1,411 @@
+{
+  "site": {
+    "title": "Tian Zhang - Data Scientist",
+    "description": "Personal website of Tian Zhang, Data Scientist specializing in machine learning, cloud deployment, and intelligent systems.",
+    "author": "Tian Zhang",
+    "version": "3.0",
+    "year": "2024"
+  },
+  "hero": {
+    "title": "Tian Zhang's Personal Website",
+    "subtitle": "AI enthusiast for applying Agentic AI to impact daily lives",
+    "description": "Building intelligent systems that transform how people interact with technology through cutting-edge AI and machine learning solutions.",
+    "image": "/figs/dog_way_to_ds.jpg",
+    "buttons": [
+      {
+        "text": "Download Resume",
+        "href": "/files/Resume_Tian_Zhang.pdf",
+        "type": "primary",
+        "icon": "download"
+      },
+      {
+        "text": "Learn More About Me",
+        "href": "/about",
+        "type": "secondary",
+        "icon": "user"
+      },
+      {
+        "text": "My Previous Works",
+        "href": "/projects",
+        "type": "tertiary",
+        "icon": "folder"
+      },
+      {
+        "text": "Get in Touch",
+        "href": "/contact",
+        "type": "outline",
+        "icon": "message"
+      }
+    ]
+  },
+  "about": {
+    "hero": {
+      "title": "About Me",
+      "description": "Data Scientist passionate about building intelligent solutions and deploying machine learning models in production environments."
+    },
+    "highlights": [
+      {
+        "icon": "🎓",
+        "title": "Education",
+        "description": "M.S. from University of Southern California (USC)",
+        "color": "blue"
+      },
+      {
+        "icon": "💼",
+        "title": "Current Role",
+        "description": "Data Scientist at JM Eagle",
+        "color": "green"
+      },
+      {
+        "icon": "🚀",
+        "title": "Expertise",
+        "description": "ML, Cloud Deployment, Python, SQL",
+        "color": "purple"
+      }
+    ],
+    "journey": {
+      "title": "My Journey",
+      "image": "/figs/Tian_Zhang.jpg",
+      "paragraphs": [
+        "I am a Data Scientist with a Master's degree from USC (2019), currently working at JM Eagle Manufacturing where I lead the Pricing Quotation Platform development.",
+        "My expertise lies in building machine learning models that solve real-world business problems. I specialize in pricing optimization, data analysis, and deploying ML solutions using cloud technologies like AWS SageMaker, Lambda, and S3.",
+        "I'm passionate about the intersection of data science and practical business applications, always looking for ways to turn data insights into actionable solutions."
+      ]
+    },
+    "skills": [
+      { "name": "Python", "level": 95, "icon": "🐍" },
+      { "name": "SQL", "level": 90, "icon": "🗃️" },
+      { "name": "Machine Learning", "level": 85, "icon": "🤖" },
+      { "name": "AWS", "level": 80, "icon": "☁️" },
+      { "name": "Data Analysis", "level": 90, "icon": "📊" },
+      { "name": "Deep Learning", "level": 75, "icon": "🧠" }
+    ],
+    "experiences": [
+      {
+        "title": "Data Scientist",
+        "company": "JM Eagle Manufacturing",
+        "period": "2019 - Present",
+        "description": "Lead the Pricing Quotation Platform development, implementing ML models for price recommendations with daily training and real-time updates.",
+        "icon": "briefcase"
+      },
+      {
+        "title": "Master of Science",
+        "company": "University of Southern California (USC)",
+        "period": "2017 - 2019",
+        "description": "Specialized in Data Science and Machine Learning with focus on practical applications and cloud deployment.",
+        "icon": "graduation-cap"
+      }
+    ]
+  },
+  "portfolio": {
+    "hero": {
+      "title": "My Portfolio",
+      "description": "Explore my work in machine learning, data science, and intelligent system development"
+    },
+    "badge": "Featured Work",
+    "cards": [
+      {
+        "title": "Machine Learning",
+        "description": "Advanced ML models, deep learning, and AI solutions for real-world problems including pricing optimization and predictive analytics.",
+        "image": "/figs/Machine Learning.png",
+        "link": "/portfolio",
+        "technologies": ["Python", "TensorFlow", "AWS", "SQL"],
+        "projectCount": 6
+      },
+      {
+        "title": "Electrical Engineering",
+        "description": "Innovative robotic systems, sensor networks, and embedded solutions with focus on automation and control systems.",
+        "image": "/figs/Robotics.png",
+        "link": "/projects",
+        "technologies": ["C++", "Arduino", "Sensors", "Control"],
+        "projectCount": 4
+      },
+      {
+        "title": "Web & App Design",
+        "description": "Modern web applications, responsive design, and full-stack development with cutting-edge technologies and frameworks.",
+        "image": "/figs/Web_Develop.png",
+        "link": "/about",
+        "technologies": ["React", "Next.js", "TypeScript", "Tailwind"],
+        "projectCount": 3
+      }
+    ],
+    "projects": [
+      {
+        "title": "Pricing Quotation Platform",
+        "category": "Machine Learning",
+        "description": "AI-powered pricing platform for JM Eagle Manufacturing with daily training and real-time price recommendations.",
+        "image": "/figs/ml_news.jpg",
+        "technologies": ["Python", "AWS SageMaker", "SQL", "Lambda", "S3"],
+        "features": [
+          "Real-time price optimization",
+          "Daily model retraining",
+          "Cloud-based deployment",
+          "Automated quote generation"
+        ],
+        "status": "Production"
+      },
+      {
+        "title": "Image Super-Resolution with FSRCNN",
+        "category": "Deep Learning",
+        "description": "Implementation of Fast Super-Resolution Convolutional Neural Network for image enhancement.",
+        "image": "/figs/ml_fsrcnn.jpg",
+        "technologies": ["Python", "TensorFlow", "OpenCV", "NumPy"],
+        "features": [
+          "Real-time image enhancement",
+          "Multiple scaling factors",
+          "Optimized for speed",
+          "High-quality results"
+        ],
+        "status": "Completed"
+      },
+      {
+        "title": "News Classification System",
+        "category": "Natural Language Processing",
+        "description": "Automated news categorization system using machine learning and NLP techniques.",
+        "image": "/figs/news.jpg",
+        "technologies": ["Python", "scikit-learn", "NLTK", "Pandas"],
+        "features": [
+          "Multi-class classification",
+          "Text preprocessing pipeline",
+          "Feature extraction",
+          "Performance optimization"
+        ],
+        "status": "Completed"
+      },
+      {
+        "title": "Robotic Snake Control System",
+        "category": "Robotics",
+        "description": "Advanced control system for robotic snake locomotion with sensor integration.",
+        "image": "/figs/robot_snake.jpg",
+        "technologies": ["C++", "Arduino", "Sensors", "Control Theory"],
+        "features": [
+          "Serpentine locomotion",
+          "Sensor feedback control",
+          "Real-time processing",
+          "Adaptive algorithms"
+        ],
+        "status": "Research"
+      },
+      {
+        "title": "Emotion Recognition System",
+        "category": "Computer Vision",
+        "description": "Deep learning model for facial emotion recognition with real-time processing capabilities.",
+        "image": "/figs/emotions.jpg",
+        "technologies": ["Python", "TensorFlow", "OpenCV", "CNN"],
+        "features": [
+          "Real-time emotion detection",
+          "Multiple emotion classes",
+          "High accuracy model",
+          "Video stream processing"
+        ],
+        "status": "Completed"
+      },
+      {
+        "title": "Language Processing Pipeline",
+        "category": "Natural Language Processing",
+        "description": "Comprehensive NLP pipeline for text analysis and language understanding.",
+        "image": "/figs/languages.jpg",
+        "technologies": ["Python", "spaCy", "BERT", "Transformers"],
+        "features": [
+          "Multi-language support",
+          "Sentiment analysis",
+          "Entity recognition",
+          "Text summarization"
+        ],
+        "status": "In Progress"
+      }
+    ],
+    "categories": ["All", "Machine Learning", "Deep Learning", "Natural Language Processing", "Computer Vision", "Robotics"],
+    "callToAction": {
+      "text": "Want to see more of my work?",
+      "buttonText": "View All Projects",
+      "buttonLink": "/portfolio"
+    }
+  },
+  "projects": {
+    "hero": {
+      "title": "My Projects",
+      "description": "Detailed showcase of my technical projects, research work, and open-source contributions"
+    },
+    "featured": [
+      {
+        "title": "Machine Learning Copycat",
+        "description": "A comprehensive machine learning project implementing various algorithms for pattern recognition and data analysis.",
+        "longDescription": "This project demonstrates the implementation of multiple machine learning algorithms from scratch, including neural networks, decision trees, and ensemble methods. The focus is on understanding the mathematical foundations and practical applications of ML techniques.",
+        "image": "/figs/ml_copycat.jpg",
+        "technologies": ["Python", "NumPy", "Pandas", "scikit-learn", "Matplotlib"],
+        "github": "https://github.com/dukesky",
+        "category": "Machine Learning",
+        "stats": { "stars": 15, "forks": 8, "commits": 127 }
+      },
+      {
+        "title": "Deep Learning Image Enhancement",
+        "description": "Advanced image super-resolution using Fast Super-Resolution Convolutional Neural Networks (FSRCNN).",
+        "longDescription": "Implementation of state-of-the-art FSRCNN architecture for real-time image enhancement. The project includes custom training pipelines, data augmentation techniques, and optimization for deployment.",
+        "image": "/figs/ml_fsrcnn.jpg",
+        "technologies": ["Python", "TensorFlow", "Keras", "OpenCV", "CUDA"],
+        "github": "https://github.com/dukesky",
+        "category": "Deep Learning",
+        "stats": { "stars": 23, "forks": 12, "commits": 89 }
+      }
+    ],
+    "all": [
+      {
+        "title": "Machine Learning Copycat",
+        "description": "A comprehensive machine learning project implementing various algorithms for pattern recognition and data analysis.",
+        "image": "/figs/ml_copycat.jpg",
+        "technologies": ["Python", "NumPy", "Pandas", "scikit-learn", "Matplotlib"],
+        "github": "https://github.com/dukesky",
+        "category": "Machine Learning",
+        "featured": true,
+        "stats": { "stars": 15, "forks": 8, "commits": 127 }
+      },
+      {
+        "title": "Deep Learning Image Enhancement",
+        "description": "Advanced image super-resolution using Fast Super-Resolution Convolutional Neural Networks (FSRCNN).",
+        "image": "/figs/ml_fsrcnn.jpg",
+        "technologies": ["Python", "TensorFlow", "Keras", "OpenCV", "CUDA"],
+        "github": "https://github.com/dukesky",
+        "category": "Deep Learning",
+        "featured": true,
+        "stats": { "stars": 23, "forks": 12, "commits": 89 }
+      },
+      {
+        "title": "Robotic Control Systems",
+        "description": "Advanced control algorithms for robotic systems with real-time sensor integration.",
+        "image": "/figs/snake_1.jpg",
+        "technologies": ["C++", "Arduino", "ROS", "MATLAB", "Embedded Systems"],
+        "github": "https://github.com/dukesky",
+        "category": "Robotics",
+        "featured": false,
+        "stats": { "stars": 8, "forks": 4, "commits": 156 }
+      },
+      {
+        "title": "Natural Language Processing Suite",
+        "description": "Comprehensive NLP toolkit for text analysis, sentiment analysis, and language understanding.",
+        "image": "/figs/languages.jpg",
+        "technologies": ["Python", "NLTK", "spaCy", "Transformers", "BERT"],
+        "github": "https://github.com/dukesky",
+        "category": "NLP",
+        "featured": false,
+        "stats": { "stars": 31, "forks": 18, "commits": 203 }
+      },
+      {
+        "title": "Computer Vision Applications",
+        "description": "Real-time computer vision applications including object detection and facial recognition.",
+        "image": "/figs/emotions.jpg",
+        "technologies": ["Python", "OpenCV", "PyTorch", "YOLO", "MediaPipe"],
+        "github": "https://github.com/dukesky",
+        "category": "Computer Vision",
+        "featured": false,
+        "stats": { "stars": 19, "forks": 11, "commits": 92 }
+      },
+      {
+        "title": "Data Science Portfolio",
+        "description": "Collection of data science projects showcasing various analytical techniques and visualizations.",
+        "image": "/figs/summary_ml.jpg",
+        "technologies": ["Python", "R", "Jupyter", "Plotly", "Streamlit"],
+        "github": "https://github.com/dukesky",
+        "category": "Data Science",
+        "featured": false,
+        "stats": { "stars": 27, "forks": 15, "commits": 178 }
+      }
+    ]
+  },
+  "contact": {
+    "hero": {
+      "title": "Get In Touch",
+      "description": "I'm always interested in new opportunities, collaborations, and interesting projects. Let's connect and discuss how we can work together."
+    },
+    "form": {
+      "title": "Send a Message",
+      "description": "Fill out the form below and I'll get back to you as soon as possible.",
+      "successTitle": "Message Sent!",
+      "successMessage": "Thank you for reaching out. I'll get back to you soon."
+    },
+    "info": {
+      "title": "Contact Information",
+      "description": "Prefer a more direct approach? You can reach me through any of these channels. I'm always happy to discuss new opportunities and interesting projects.",
+      "items": [
+        {
+          "icon": "mail",
+          "title": "Email",
+          "value": "0tianzhang0@gmail.com",
+          "link": "mailto:0tianzhang0@gmail.com",
+          "description": "Send me an email anytime"
+        },
+        {
+          "icon": "linkedin",
+          "title": "LinkedIn",
+          "value": "Tian Zhang",
+          "link": "https://www.linkedin.com/in/tian-zhang-87b4a0165/",
+          "description": "Connect with me professionally"
+        },
+        {
+          "icon": "github",
+          "title": "GitHub",
+          "value": "dukesky",
+          "link": "https://github.com/dukesky",
+          "description": "Check out my code"
+        },
+        {
+          "icon": "map-pin",
+          "title": "Location",
+          "value": "Los Angeles, CA",
+          "link": null,
+          "description": "Based in Southern California"
+        }
+      ]
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "items": [
+        {
+          "icon": "download",
+          "text": "Download My Resume",
+          "href": "/files/Resume_Tian_Zhang.pdf"
+        },
+        {
+          "icon": "linkedin",
+          "text": "Connect on LinkedIn",
+          "href": "https://www.linkedin.com/in/tian-zhang-87b4a0165/"
+        },
+        {
+          "icon": "github",
+          "text": "View My GitHub",
+          "href": "https://github.com/dukesky"
+        }
+      ]
+    },
+    "links": [
+      {
+        "text": "Email",
+        "href": "mailto:0tianzhang0@gmail.com",
+        "icon": "mail",
+        "color": "blue-600"
+      },
+      {
+        "text": "LinkedIn",
+        "href": "https://www.linkedin.com/in/tian-zhang-87b4a0165/",
+        "icon": "linkedin",
+        "color": "blue-700",
+        "external": true
+      },
+      {
+        "text": "GitHub",
+        "href": "https://github.com/dukesky",
+        "icon": "github",
+        "color": "gray-800",
+        "external": true
+      },
+      {
+        "text": "Contact Form →",
+        "href": "/contact",
+        "color": "white"
+      }
+    ]
+  },
+  "footer": {
+    "text": "Designed by Tian Zhang • Modern Personal Website v3.0 • 2024"
+  }
+}
