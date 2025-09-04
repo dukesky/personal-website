@@ -102,7 +102,7 @@
       "title": "My Portfolio",
       "description": "Explore my work in machine learning, data science, and intelligent system development"
     },
-    "badge": "Featured Work",
+    "badge": "",
     "cards": [
       {
         "title": "Machine Learning",
