@@ -1,16 +1,16 @@
 {
   "site": {
-    "title": "Tian Zhang - Data Scientist",
-    "description": "Personal website of Tian Zhang, Data Scientist specializing in machine learning, cloud deployment, and intelligent systems.",
+    "title": "Tian Zhang - Machine Learning Engineer",
+    "description": "Personal website of Tian Zhang, Machine Learning Engineer specializing in machine learning, cloud deployment, and intelligent systems.",
     "author": "Tian Zhang",
     "version": "3.0",
-    "year": "2024"
+    "year": "2025"
   },
   "hero": {
     "title": "Tian Zhang's Personal Website",
     "subtitle": "AI enthusiast for applying Agentic AI to impact daily lives",
     "description": "Building intelligent systems that transform how people interact with technology through cutting-edge AI and machine learning solutions.",
-    "image": "/figs/dog_way_to_ds.jpg",
+    "image": "/figs/main_page_1.png",
     "buttons": [
       {
         "text": "Download Resume",
@@ -399,9 +399,10 @@
         "external": true
       },
       {
-        "text": "Contact Form →",
+        "text": "Contact",
         "href": "/contact",
-        "color": "white"
+        "icon": "message-square",
+        "color": "blue-700"
       }
     ]
   },

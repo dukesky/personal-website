@@ -734,3 +734,27 @@ https://nextjs.org/docs/messages/module-not-found
  GET /about/ 200 in 72ms
  GET /contact/ 200 in 139ms
  GET / 200 in 581ms
+ GET / 200 in 795ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 449ms
+ GET / 200 in 1631ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 587ms
+ GET /contact/ 200 in 571ms
+ ✓ Compiled in 558ms
+ ✓ Compiled in 1805ms
+ ✓ Compiled in 121ms
+ ✓ Compiled in 522ms
+ GET / 200 in 2092ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 1501ms
+ ✓ Compiled in 158ms
+ GET / 200 in 910ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 435ms
+ ✓ Compiled in 91ms
+ ✓ Compiled in 47ms
+ ✓ Compiled in 173ms
+ GET / 200 in 868ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 2535ms
+ ✓ Compiled in 145ms
+ ✓ Compiled in 66ms
+ GET / 200 in 707ms
+ GET /favicon.ico?favicon.45db1c09.ico 200 in 364ms
+ GET /portfolio/ 200 in 83ms
